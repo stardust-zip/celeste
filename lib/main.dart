@@ -7,15 +7,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "celeste", home: Homepage());
+    return MaterialApp(
+      title: "celeste",
+      theme: ThemeData.dark(),
+      home: Homepage(),
+    );
   }
 }
 
-class Homepage extends StatelessWidget {
+class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
   @override
+  State<Homepage> createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Celeste PKM")));
+    return Scaffold(
+      body: Center(
+        child: Text(
+          "Celeste Notebook is not a PKM system. But if you can use it as so if u like!",
+        ),
+      ),
+    );
   }
 }

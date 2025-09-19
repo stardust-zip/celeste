@@ -68,4 +68,7 @@ lib/generated_plugin_registrant.dart
 # docs
 guide.md
 
+# direnv
+.direnv/
+
 # End of https://www.toptal.com/developers/gitignore/api/flutter
